@@ -21,7 +21,7 @@
    <div class="container-fluid">
      <div class="row mb-2">
        <div class="col-sm-6">
-         <h1>{{objtype}}</h1>
+         <h1>{{ _(objtype) }}</h1>
        </div>
      </div>
    </div><!-- /.container-fluid -->
@@ -95,6 +95,6 @@
 <script src="plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
 <script src="static/table.js"></script>
 <script>
-  $(x => setDatatable("#my_data"))
+  $(x => setDatatable("#my_data", "{{ _('dataTables.english.lang') }}"))
 </script>
 {% end %}
